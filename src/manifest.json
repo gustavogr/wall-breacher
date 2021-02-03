@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "WallBreacher",
+  "version": "1.0",
+
+  "description": "Removes adblock walls from several sites",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.20minutos.es/*", "*://*.elpais.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
